@@ -259,26 +259,32 @@ h5 {
 
 .education h4 {
     font-weight: bold;
-    padding-left: 110px;
+    padding-left: 8%;
+    
+
 }
 
 
 
 .education {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 40px;
-    padding-top: 10px;
+    padding-top: 5%;
     padding-bottom: 100px;
     background-color: azure;
+    font-size: larger;
 }
 
 .edu-detail h5 {
     color: black;
+    font-size: larger;
+    
 }
 
 .edu-detail {
     margin-top: 0%;
+    color: #1e293b;
 }
 
 
@@ -290,13 +296,16 @@ h5 {
     align-items: start; 
     padding: 50px 5%;
     background-color: whitesmoke;
+    padding-left: 8%;
+    
 }
 
 
 .sunInfo {
     display: flex;
     flex-direction: column;
-    gap: 15px; 
+    gap: 15px;
+    
 }
 
 
@@ -308,7 +317,7 @@ h5 {
 }
 
 .card-hero h3 {
-    font-size: 1.25rem;
+    font-size: larger;
     font-weight: 700;
     margin: 0;
 }
@@ -432,4 +441,137 @@ footer {
 .patent p {
     font-size: small;
     color: rgb(180, 171, 171);
+}
+
+@media (min-width-768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .home {
+        padding: 40px 5%;
+    }
+    
+    .container {
+        min-width: 100%;
+    }
+
+    .about {
+        padding: 40px 5%;
+    }
+
+    .about .fst {
+        margin-left: 0; 
+    }
+
+    .about .txt {
+        width: 100%;
+        margin-left: 0; 
+    }
+
+    .about #aboutQut {
+        margin-right: 0; 
+    }
+
+    .Skills h4 {
+        margin-left: 0; 
+    }
+
+    .education h4 {
+        padding-left: 0; 
+    }
+
+    .card {
+        width: 45%; 
+    }
+
+    .otherInfo {
+        grid-template-columns: repeat(2, 1fr); 
+        padding: 40px 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .identity {
+        margin-left: 0;
+    }
+
+    .list ul {
+        margin-right: 0; 
+        gap: 15px;
+    }
+
+    
+    .home {
+        flex-direction: column-reverse; 
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .container1 {
+        justify-content: center; 
+        margin-bottom: 20px;
+    }
+
+    .mainT {
+        width: 100%; 
+    }
+
+    .buttons {
+        justify-content: center; 
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .right-items {
+        flex-direction: column;
+        margin-right: 0;
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    
+    .education {
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 20px;
+    }
+
+    
+    .otherInfo {
+        grid-template-columns: 1fr; 
+        padding: 40px 20px;
+    }
+
+    
+    footer {
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+        padding: 20px;
+    }
 }
